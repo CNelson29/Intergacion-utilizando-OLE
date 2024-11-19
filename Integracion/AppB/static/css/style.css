@@ -1,0 +1,83 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a; /* Fondo negro tecnológico */
+    color: #eaeaea; /* Texto blanco suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Apilar elementos verticalmente */
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Formulario */
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    color: #dcdcdc;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    width: 300px; /* Tamaño uniforme */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0066ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0051cc;
+}
+
+/* Contenedor de imágenes */
+.facturas {
+    display: flex;
+    flex-wrap: wrap; /* Imágenes en cascada */
+    gap: 15px; /* Espacio entre imágenes */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.facturas img {
+    width: 150px; /* Tamaño fijo para las imágenes */
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #444444;
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.facturas img:hover {
+    transform: scale(1.1); /* Efecto de zoom */
+}
